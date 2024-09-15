@@ -24,11 +24,11 @@ def run_asyncio_job(job):
 async def job():
     async with aiohttp.ClientSession() as session:
         TFM_id = 165
-        Directorio = "DATOS_TFM_JUNIO_2024"
-        Resultados = f"{Directorio}"
+        Directorio = "Downloads"
+        Resultados = f"{Directorio}/Final_Files"
 
 
-        BASE_URL = 'https://yourcompany.instructure.com'
+        BASE_URL = 'https://yourcompany.instructure.com' # Set the correct URL for your company, like https://oxford.instructure.com'
         ACCESS_TOKEN = 'x'
         # headers = {'Authorization': f'Bearer {ACCESS_TOKEN}'}
 
